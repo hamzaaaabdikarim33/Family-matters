@@ -24,7 +24,7 @@ h2 {
 }
 
 #jumbo1 {
-    margin-left: 30px;
+    margin-left: 35px;
     margin-right: 5px;
     width: 31%;
     background-color: linen;
@@ -43,4 +43,10 @@ h2 {
     margin-right: 5px;
     width: 31%;
     background-color: linen;
+}
+
+#select-player {
+    font-family: 'Sunflower', sans-serif;
+    background-color: darkslategray;
+    color: white;
 }
