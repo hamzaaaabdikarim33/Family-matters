@@ -1,7 +1,25 @@
+body {
+    background: url("../images/nflteams.jpg");
+}
+
 h1 {
     text-align: center;
 }
 
-#container {
-    color: blue;
+.nav {
+    background-color: darkslategray;
+    color: white;
+    padding: 10px;
+}
+
+#jumbo1 {
+    border: 1px groove darkslategray;
+}
+
+#jumbo2 {
+    border: 1px groove darkslategray;
+}
+
+#jumbo3 {
+    border: 1px groove darkslategray;
 }
