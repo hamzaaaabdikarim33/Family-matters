@@ -10,6 +10,7 @@ h1 {
 h2 {
     text-align: center;
     font-family: 'Sunflower', sans-serif;
+    border-bottom: 1px dotted;
 }
 
 .form {
@@ -49,4 +50,28 @@ h2 {
     font-family: 'Sunflower', sans-serif;
     background-color: darkslategray;
     color: white;
+}
+
+.qb {
+    border-bottom: 1px solid;
+}
+
+.rb {
+    border-bottom: 1px solid;
+}
+
+.wr {
+    border-bottom: 1px solid;
+}
+
+.te {
+    border-bottom: 1px solid;
+}
+
+.k {
+    border-bottom: 1px solid;
+}
+
+.def {
+    border-bottom: 1px solid;
 }
