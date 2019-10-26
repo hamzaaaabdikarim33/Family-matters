@@ -1,8 +1,18 @@
 body {
-    background: url("../images/nflteams.jpg");
+    background: url("../images/field.jpg");
 }
 
 h1 {
+    text-align: center;
+    font-family: 'Sunflower', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Sunflower', sans-serif;
+}
+
+.form {
     text-align: center;
 }
 
@@ -10,16 +20,26 @@ h1 {
     background-color: darkslategray;
     color: white;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 #jumbo1 {
-    border: 1px groove darkslategray;
+    margin-left: 30px;
+    margin-right: 5px;
+    width: 31%;
+    background-color: linen;
 }
 
 #jumbo2 {
-    border: 1px groove darkslategray;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 31%;
+    background-color: linen;
 }
 
 #jumbo3 {
-    border: 1px groove darkslategray;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 31%;
+    background-color: linen;
 }

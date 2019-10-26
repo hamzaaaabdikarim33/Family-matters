@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Fantasy Football Database</title>
     <!-- Bootstrap core CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -17,29 +19,38 @@
 
     <header>
         <nav class="nav">
-            <h1>Fantasy Football Database</h1>
+            <h1>Fantasy Football Database <i class="fas fa-football-ball" id="ball2"></i></h1>
         </nav>
     </header>
 
     <div id="container">
 
         <div class="row">
-            <div class="jumbotron text-center col-md-4" id="jumbo1">
-                    <h2>Search Players</h2>
-                    <input type="text" id="player-search">
+            <div class="jumbotron col-md-4" id="jumbo1">
+                <h2>Search Players</h2>
+                <div class="form">
+                    <input type="text" id="player-search" placeholder="Enter player's name...">
                     <button type="button" id="select-player" type="submit" value="Search">Search</button>
+                </div>
+                
+                <div class="name"></div>
+                <div class="position"></div>
+                <div class="team"></div>
+                <div class="weekly-projected"></div>
+                <div class="season-projected"></div>
+
             </div>
 
-            <div class="jumbotron text-center col-md-4" id="jumbo2">
+            <div class="jumbotron col-md-4" id="jumbo2">
                     <h2>This Week's Top Projected Players</h2>
                         <h3>QB</h3>
                         <div class="qb"></div>
 
+                        <h3>RB</h3>
+                        <div class="RB"></div>
+
                         <h3>WR</h3>
                         <div class="wr"></div>
-
-                        <h3>RB</h3>
-                        <div class="rb"></div>
 
                         <h3>TE</h3>
                         <div class="te"></div>
@@ -51,8 +62,9 @@
                         <div class="def"></div>
                     </div>
 
-            <div class="jumbotron text-center col-md-4" id="jumbo3">
-                    <h2>Upcoming NFL Schedule</h2>
+            <div class="jumbotron col-md-4" id="jumbo3">
+                <h2>Upcoming NFL Schedule</h2>
+                    <ul id="schedule"></ul>
             </div>
         </div>
 
