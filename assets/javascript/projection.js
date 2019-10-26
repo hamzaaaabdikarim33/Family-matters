@@ -15,7 +15,7 @@ $(document).ready(function(event) {
             }
         }
         console.log(response.players[playerIndex].name);
-        $("#def").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
+        $(".def").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
     });
 });
 $(document).ready(function(event) {
@@ -35,7 +35,7 @@ $(document).ready(function(event) {
             }
         }
         console.log(response.players[playerIndex].name);
-        $("#qb").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
+        $(".qb").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
     });
 });
 $(document).ready(function(event) {
@@ -55,7 +55,7 @@ $(document).ready(function(event) {
             }
         }
         console.log(response.players[playerIndex].name);
-        $("#rb").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
+        $(".rb").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
     });
 });
 $(document).ready(function(event) {
@@ -75,7 +75,7 @@ $(document).ready(function(event) {
             }
         }
         console.log(response.players[playerIndex].name);
-        $("#wr").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
+        $(".wr").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
     });
 });
 $(document).ready(function(event) {
@@ -95,7 +95,7 @@ $(document).ready(function(event) {
             }
         }
         console.log(response.players[playerIndex].name);
-        $("#te").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
+        $(".te").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
     });
 });
 $(document).ready(function(event) {
@@ -115,6 +115,6 @@ $(document).ready(function(event) {
             }
         }
         console.log(response.players[playerIndex].name);
-        $("#k").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
+        $(".k").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
     });
 });
