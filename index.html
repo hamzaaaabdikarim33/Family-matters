@@ -12,6 +12,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <script>
+    var hike = new Audio();
+    hike.src = "assets/audio/hike.mp3";
+    </script>
 
 </head>
 
@@ -27,10 +31,10 @@
 
         <div class="row">
             <div class="jumbotron col-md-4" id="jumbo1">
-                <h2>Search Players</h2>
+                <h2><strong>Search Players</strong></h2>
                 <div class="form">
                     <input type="text" id="player-search" placeholder="Enter player's name...">
-                    <button type="button" id="select-player" type="submit" value="Search">Search</button>
+                    <button type="button" id="select-player" type="submit" value="Search" onmousedown="hike.play()">Search</button>
                 </div>
                       
                       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
@@ -51,7 +55,7 @@
 
             <div class="jumbotron col-md-4" id="jumbo2">
 
-                <h2>This Week's Top Projected Players</h2>
+                <h2><strong>This Week's Top Projected Players</strong></h2>
 
                 <h3><strong>Quarterback</strong></h3>
                 <div class="qb"></div>
@@ -73,14 +77,14 @@
             </div>
 
             <div class="jumbotron col-md-4" id="jumbo3">
-                <h2>Upcoming NFL Schedule</h2>
+                <h2><strong>Upcoming NFL Schedule</strong></h2>
+            
                 <ul id="schedule"></ul>
 
                 <div class="start"></div>
                 <div class="away-team"></div>
                 <div class="home-team"></div>
                 
-
             </div>
 
         </div>
@@ -89,7 +93,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="assets/javascript/projection.js"></script>
         <script src="assets/javascript/schedule.js"></script>
-        <script src="searchcolumn.js"></script>
+        <script src="assets/javascript/searchcolumn.js"></script>
 
 </body>
 
