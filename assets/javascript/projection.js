@@ -17,8 +17,7 @@ $(document).ready(function(event) {
         console.log(response.players[playerIndex].name);
         $(".def").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
     });
-});
-$(document).ready(function(event) {
+
     var queryURL = "https://api.fantasy.nfl.com/v1/players/stats?statType=weekProjectedStats&season=2019&currentWeek&position=QB&format=json";
     console.log(queryURL);
     $.ajax({
@@ -35,10 +34,9 @@ $(document).ready(function(event) {
             }
         }
         console.log(response.players[playerIndex].name);
-        $(".qb").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
+        $(".qb").html(response.players[playerIndex].name + "<br>" + response.players[playerIndex].teamAbbr + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
     });
-});
-$(document).ready(function(event) {
+
     var queryURL = "https://api.fantasy.nfl.com/v1/players/stats?statType=weekProjectedStats&season=2019&currentWeek&position=RB&format=json";
     console.log(queryURL);
     $.ajax({
@@ -55,10 +53,9 @@ $(document).ready(function(event) {
             }
         }
         console.log(response.players[playerIndex].name);
-        $(".rb").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
+        $(".rb").html(response.players[playerIndex].name + "<br>" + response.players[playerIndex].teamAbbr + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
     });
-});
-$(document).ready(function(event) {
+
     var queryURL = "https://api.fantasy.nfl.com/v1/players/stats?statType=weekProjectedStats&season=2019&currentWeek&position=WR&format=json";
     console.log(queryURL);
     $.ajax({
@@ -75,10 +72,9 @@ $(document).ready(function(event) {
             }
         }
         console.log(response.players[playerIndex].name);
-        $(".wr").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
+        $(".wr").html(response.players[playerIndex].name + "<br>" + response.players[playerIndex].teamAbbr + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
     });
-});
-$(document).ready(function(event) {
+
     var queryURL = "https://api.fantasy.nfl.com/v1/players/stats?statType=weekProjectedStats&season=2019&currentWeek&position=TE&format=json";
     console.log(queryURL);
     $.ajax({
@@ -95,10 +91,9 @@ $(document).ready(function(event) {
             }
         }
         console.log(response.players[playerIndex].name);
-        $(".te").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
+        $(".te").html(response.players[playerIndex].name + "<br>" + response.players[playerIndex].teamAbbr + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
     });
-});
-$(document).ready(function(event) {
+
     var queryURL = "https://api.fantasy.nfl.com/v1/players/stats?statType=weekProjectedStats&season=2019&currentWeek&position=K&format=json";
     console.log(queryURL);
     $.ajax({
@@ -115,6 +110,6 @@ $(document).ready(function(event) {
             }
         }
         console.log(response.players[playerIndex].name);
-        $(".k").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
+        $(".k").html(response.players[playerIndex].name + "<br>" + response.players[playerIndex].teamAbbr + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
     });
 });
