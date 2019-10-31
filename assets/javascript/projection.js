@@ -15,7 +15,7 @@ $(document).ready(function(event) {
             }
         }
         console.log(response.players[playerIndex].name);
-        $(".def").html(response.players[playerIndex].name + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
+        $(".def").html(response.players[playerIndex].name + "<br>" + response.players[playerIndex].teamAbbr + "<br>" + "Projected points this week: " + response.players[playerIndex].weekProjectedPts);
     });
 
     var queryURL = "https://api.fantasy.nfl.com/v1/players/stats?statType=weekProjectedStats&season=2019&currentWeek&position=QB&format=json";
